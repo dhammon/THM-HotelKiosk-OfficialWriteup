@@ -5,7 +5,7 @@ I created the [HotelKiosk box on TryHackMe]() to highlight my first two CVEs ([C
 ### Nmap
 Conducting a basic nmap scan for common ports.
 
-![](images/Pasted image 20220521182212.png)
+![nmap](/images/Pasted image 20220521182212.png)
 
 Interesting ports discovered include
 - 80 HTTP
