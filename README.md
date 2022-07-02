@@ -57,7 +57,7 @@ Now that we have file access, let's check out the `/access.log` file that was re
 
 ![](images/Pasted%20image%2020220521183622.png)
 
-![](images/Pasted image 20220521184306.png)
+![](images/Pasted%20image%2020220521184306.png)
 
 In the access log we find local connections being made to authenticated pages.  This traffic must be from the hotel's employees or manager to book reservations as suggested in the `notes.txt` file.  A closer look at the log shows that session IDs are included as GET parameters, which is consistent with research from CVE-2021-42948.  With this traffic we can hijack the user session, but only directly from the kiosk machine as CVE-2021-42949 advises that the remote address_addr from the header of web traffic is used to authenticate sessions.
 
